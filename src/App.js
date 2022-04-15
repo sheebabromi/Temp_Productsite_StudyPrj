@@ -1,12 +1,13 @@
 import React from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-import { Navbar, Sidebar, Footer } from './components'
+import { Navbar, Sidebar, Footer, CartPopup } from './components'
 import {About, Cart, Checkout, Error, Home, PrivateRoute, Products, SingleProduct, AuthWrapper } from './pages'
 function App() {
   return (
   <AuthWrapper>  
     <Router>
        <Navbar />
+       <CartPopup />
        <Sidebar />
        <Switch>
           <Route exact path='/'>
